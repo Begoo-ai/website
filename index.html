@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Begoo - Professional voice-to-text application for macOS. Transform your speech into text with AI-powered accuracy.">
+    <title>Begoo - Professional Voice-to-Text for macOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="light-theme.css">
+    <script src="js/components.js"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="voiceflow-icon.svg" alt="Begoo" class="hero-icon" id="heroIcon" style="width: 220px; height: 220px; margin: 0 auto 0px; display: block;">
+            <h1>Stop Typing. Start Talking.</h1>
+            <p class="subtitle">AI transcription that lives on your Mac. Private, powerful, and actually works.</p>
+            <!-- Download Options -->
+            <div class="hero-download">
+                <!-- Download Tabs -->
+                <div class="hero-download-tabs">
+                    <button class="hero-tab-button active" onclick="showHeroTab('homebrew')">Homebrew</button>
+                    <button class="hero-tab-button" onclick="showHeroTab('direct')">Direct Download</button>
+                </div>
+                
+                <!-- Homebrew Tab -->
+                <div id="hero-homebrew-tab" class="hero-tab-content active">
+                    <div class="hero-code-block">
+                        <code>brew install --cask begoo</code>
+                        <button class="hero-copy-btn" onclick="copyToClipboard('brew install --cask begoo')">Copy</button>
+                    </div>
+                </div>
+                
+                <!-- Direct Download Tab -->
+                <div id="hero-direct-tab" class="hero-tab-content">
+                    <a href="https://github.com/begoo-ai/app/releases/latest/download/Begoo.zip" class="btn-primary hero-download-btn">
+                        <span>📦</span>
+                        Download Begoo.zip (Apple Silicon)
+                    </a>
+                    <p class="hero-download-note">For Intel Macs, use Homebrew above</p>
+                </div>
+            </div>
+            <div class="badge">macOS 14.0+ • Universal Support</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Why Begoo?</h2>
+            <p>Simple, fast, private</p>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Just speak</h3>
+                <p>Your words appear instantly. No lag, no fuss.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">🔐</span>
+                <h3>Stays private</h3>
+                <p>Everything runs locally on your Mac.</p>
+            </div>
+            
+            <div class="feature-card">
+                <span class="feature-icon">🎯</span>
+                <h3>Works anywhere</h3>
+                <p>Email, docs, chat—wherever you type.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing/Free Section -->
+    <section id="pricing" class="pricing">
+        <div class="pricing-container">
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 12px; color: #1a1a2e;">It's free</h2>
+                <p style="color: rgba(26, 26, 46, 0.7); font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                    Use it however you want. For commercial use with teams larger than 10 people, just reach out and we'll sort something out.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <script>
+        // Hero download tabs functionality
+        function showHeroTab(tabName) {
+            // Hide all hero tab contents
+            const heroTabContents = document.querySelectorAll('.hero-tab-content');
+            heroTabContents.forEach(tab => tab.classList.remove('active'));
+            
+            // Remove active class from all hero tab buttons
+            const heroTabButtons = document.querySelectorAll('.hero-tab-button');
+            heroTabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected hero tab
+            document.getElementById('hero-' + tabName + '-tab').classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+        
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show feedback
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.background = '#10b981';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
