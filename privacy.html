@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Begoo Privacy Policy">
+    <title>Privacy Policy - Begoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="light-theme.css">
+    <script src="js/components.js"></script>
+    <style>
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <div class="container" style="padding-top: 120px;">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Privacy Policy for Begoo</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> November 21, 2025</p>
+
+        <div class="summary">
+            <p><strong>TL;DR:</strong> Your voice stays on your device. All transcription happens locally. Crash reporting is optional and opt-in only. No accounts, no tracking, 100% free.</p>
+        </div>
+
+        <h2>What We Collect</h2>
+        
+        <h3>Your Audio & Transcriptions</h3>
+        <p><strong>Audio is processed 100% locally on your Mac.</strong> It's never stored permanently or uploaded anywhere. Transcription text stays on your device only.</p>
+
+        <h3>Optional Crash Reporting (Opt-In)</h3>
+        <p><strong>Crash reporting is OFF by default.</strong> You must explicitly enable it in Settings → Privacy.</p>
+        
+        <p>If you choose to enable crash reporting, we use Sentry to collect:</p>
+        <ul>
+            <li>Anonymous crash reports and error logs</li>
+            <li>App performance metrics</li>
+            <li>Device type and macOS version</li>
+            <li><strong>Never collected:</strong> Your transcription text, audio data, or any personal information</li>
+        </ul>
+        
+        <p><strong>Privacy Filters:</strong> Even if crash reporting is enabled, all transcription text is automatically redacted from error reports.</p>
+        
+        <p>Learn more: <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></p>
+
+        <h2>Transcription Engines</h2>
+
+        <h3>Whisper.cpp</h3>
+        <p>Runs entirely on your device. No data leaves your Mac.</p>
+
+        <h3>Apple Speech Recognition</h3>
+        <p>Also runs entirely on your device. We use on-device recognition only—no audio is sent to Apple's servers.</p>
+
+        <h2>Permissions</h2>
+        <p>Begoo needs:</p>
+        <ul>
+            <li><strong>Microphone:</strong> To record your voice</li>
+            <li><strong>Accessibility:</strong> To type transcribed text into other apps</li>
+            <li><strong>Speech Recognition:</strong> To use Apple's on-device speech recognition (optional)</li>
+        </ul>
+
+        <h2>Your Control</h2>
+        <ul>
+            <li>All settings and transcription history are stored locally on your Mac</li>
+            <li>Crash reporting is opt-in and can be disabled anytime in Settings → Privacy</li>
+            <li>Uninstall the app to delete everything</li>
+            <li>No accounts, no cloud sync, no tracking</li>
+        </ul>
+        
+        <h2>Data Storage</h2>
+        <p>Begoo stores data only in your Mac's local storage:</p>
+        <ul>
+            <li><strong>Transcription History:</strong> Stored in SwiftData (local database)</li>
+            <li><strong>Settings:</strong> Stored in UserDefaults (local preferences)</li>
+            <li><strong>Whisper Models:</strong> Downloaded to <code>~/Library/Application Support/Begoo/models/</code></li>
+            <li><strong>Temporary Audio:</strong> Automatically deleted after transcription</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Questions? Email us at <span class="email-placeholder"></span></p>
+
+        <!-- Footer Placeholder -->
+        <div id="footer-placeholder"></div>
+    </div>
+</body>
+</html>
+

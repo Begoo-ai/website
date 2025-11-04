@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Preview - Begoo</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #f5f5f5; }
+        .section { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; }
+        .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; }
+        .icon-option { text-align: center; padding: 15px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; }
+        .icon-option:hover { border-color: #5B9FD8; background: #f0f8ff; }
+        .icon-option svg { width: 48px; height: 48px; color: #5B9FD8; }
+        .icon-option svg [opacity] { fill: #5B9FD8; opacity: 0.2; }
+        .icon-option svg [stroke] { stroke: #5B9FD8; }
+        .icon-name { font-size: 11px; margin-top: 8px; color: #666; }
+        h1 { text-align: center; }
+        h2 { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>🎨 Select Icons for Begoo</h1>
+    
+    <div class="section">
+        <h2>🔐 Stays Private - "Everything runs locally"</h2>
+        <p style="color: #666; margin-bottom: 20px;">Choose the best icon:</p>
+        <div id="private-icons"></div>
+    </div>
+
+    <div class="section">
+        <h2>🌍 Works Anywhere - "Email, docs, chat"</h2>
+        <p style="color: #666; margin-bottom: 20px;">Choose the best icon:</p>
+        <div id="anywhere-icons"></div>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Our Mission - "Make transcription accessible"</h2>
+        <p style="color: #666; margin-bottom: 20px;">Choose the best icon:</p>
+        <div id="mission-icons"></div>
+    </div>
+
+    <div class="section">
+        <h2>💡 Sustainable Model - "Building sustainable business"</h2>
+        <p style="color: #666; margin-bottom: 20px;">Choose the best icon:</p>
+        <div id="sustainable-icons"></div>
+    </div>
+
+    <div class="section">
+        <h2>🤝 Honor System - "Free for individuals"</h2>
+        <p style="color: #666; margin-bottom: 20px;">Choose the best icon:</p>
+        <div id="honor-icons"></div>
+    </div>
+
+    <script>
+        // Icon data will be loaded from phosphor-icons folder
+        alert('Open this file and tell me which icons you like for each section!');
+    </script>
+</body>
+</html>
