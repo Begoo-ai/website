@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Begoo - Professional voice-to-text application for macOS. Transform your speech into text with AI-powered accuracy.">
+    <meta name="description" content="Begoo - AI voice-to-text for macOS. Free with 20 daily transcriptions. Pro: $9.99/year for unlimited. 100% private, local processing. 14-day free trial.">
     <title>Begoo - Professional Voice-to-Text for macOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,8 +106,120 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" style="max-width: 800px; margin: 80px auto; padding: 0 20px;">
+        <h2 style="text-align: center; font-size: 32px; font-weight: 600; margin-bottom: 40px; color: #1a1a2e;">Frequently Asked Questions</h2>
+        
+        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 16px; color: #1a1a2e;">Can I cancel anytime?</summary>
+            <p style="margin-top: 12px; color: #6b7280; line-height: 1.6;">Yes! Cancel anytime through the App Store. You'll keep Pro access until the end of your billing period.</p>
+        </details>
+        
+        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 16px; color: #1a1a2e;">Is my data private?</summary>
+            <p style="margin-top: 12px; color: #6b7280; line-height: 1.6;">100% private. All transcription happens locally on your Mac. Nothing is uploaded to the cloud.</p>
+        </details>
+        
+        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 16px; color: #1a1a2e;">What happens after the free trial?</summary>
+            <p style="margin-top: 12px; color: #6b7280; line-height: 1.6;">After 14 days, you'll be charged $9.99/year (or $1.99/month). Cancel before the trial ends to avoid charges.</p>
+        </details>
+        
+        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 16px; color: #1a1a2e;">Can I share with my family?</summary>
+            <p style="margin-top: 12px; color: #6b7280; line-height: 1.6;">Yes! Pro subscriptions include Family Sharing for up to 6 family members.</p>
+        </details>
+        
+        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 16px; color: #1a1a2e;">Do I need an internet connection?</summary>
+            <p style="margin-top: 12px; color: #6b7280; line-height: 1.6;">No! Begoo works completely offline. All transcription happens locally on your device.</p>
+        </details>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 60px 20px; text-align: center; color: white; margin-top: 80px;">
+        <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">Ready to stop typing?</h2>
+        <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Start your 14-day free trial today. No credit card required.</p>
+        <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" style="display: inline-flex; align-items: center; gap: 12px; background: white; color: #667eea; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 18px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <span style="font-size: 24px;">🍎</span>
+            Download Now
+        </a>
+    </section>
+
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
+    
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .pricing-container > div > div {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            .hero-download-btn {
+                font-size: 16px !important;
+                padding: 14px 24px !important;
+            }
+            section h2 {
+                font-size: 28px !important;
+            }
+        }
+        
+        /* Hover effects */
+        .hero-download-btn:hover,
+        a[href*="apps.apple.com"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Details/Summary styling */
+        details summary {
+            list-style: none;
+            position: relative;
+            padding-right: 30px;
+        }
+        
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        details summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 24px;
+            color: #667eea;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+        
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+        
+        details {
+            transition: all 0.3s ease;
+        }
+        
+        details:hover {
+            border-color: #667eea !important;
+        }
+    </style>
     
 </body>
 </html>
