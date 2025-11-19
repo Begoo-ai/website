@@ -24,10 +24,10 @@
     <div class="container" style="padding-top: 120px;">
         <a href="index.html" class="back-link">← Back to Home</a>
         <h1>Privacy Policy for Begoo</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> November 2, 2025</p>
+        <p class="last-updated"><strong>Last Updated:</strong> November 20, 2025</p>
 
         <div class="summary">
-            <p><strong>TL;DR:</strong> Your voice stays on your device. All transcription happens locally. Crash reporting is optional and opt-in only.</p>
+            <p><strong>TL;DR:</strong> Your voice stays on your device. All transcription happens locally. Crash reporting is optional and opt-in only. Subscriptions are managed by Apple—we don't see your payment info.</p>
         </div>
 
         <h2>What We Collect</h2>
@@ -74,11 +74,21 @@
             <li>No accounts, no cloud sync, no tracking</li>
         </ul>
         
+        <h2>Subscription & Payment</h2>
+        <p>Begoo uses Apple's In-App Purchase system for Pro subscriptions:</p>
+        <ul>
+            <li><strong>Payment Processing:</strong> Handled entirely by Apple—we never see your payment information</li>
+            <li><strong>Subscription Status:</strong> Verified locally through StoreKit 2</li>
+            <li><strong>Usage Tracking:</strong> Daily transcription count stored locally in Keychain (survives app deletion)</li>
+            <li><strong>No Server:</strong> No subscription data is sent to our servers</li>
+        </ul>
+        
         <h2>Data Storage</h2>
         <p>Begoo stores data only in your Mac's local storage:</p>
         <ul>
             <li><strong>Transcription History:</strong> Stored in SwiftData (local database)</li>
             <li><strong>Settings:</strong> Stored in UserDefaults (local preferences)</li>
+            <li><strong>Usage Data:</strong> Stored in Keychain (secure, survives app deletion)</li>
             <li><strong>Whisper Models:</strong> Downloaded to <code>~/Library/Application Support/Begoo/models/</code></li>
             <li><strong>Temporary Audio:</strong> Automatically deleted after transcription</li>
         </ul>

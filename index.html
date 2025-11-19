@@ -21,32 +21,15 @@
             <img src="voiceflow-icon.svg" alt="Begoo" class="hero-icon" id="heroIcon" style="width: 220px; height: 220px; margin: 0 auto 0px; display: block;">
             <h1>Stop Typing. Start Talking.</h1>
             <p class="subtitle">AI transcription that lives on your Mac. Private, powerful, and actually works.</p>
-            <!-- Download Options -->
+            <!-- App Store Download -->
             <div class="hero-download">
-                <!-- Download Tabs -->
-                <div class="hero-download-tabs">
-                    <button class="hero-tab-button active" onclick="showHeroTab('homebrew')">Homebrew</button>
-                    <button class="hero-tab-button" onclick="showHeroTab('direct')">Direct Download</button>
-                </div>
-                
-                <!-- Homebrew Tab -->
-                <div id="hero-homebrew-tab" class="hero-tab-content active">
-                    <div class="hero-code-block">
-                        <code>brew install --cask begoo</code>
-                        <button class="hero-copy-btn" onclick="copyToClipboard('brew install --cask begoo')">Copy</button>
-                    </div>
-                </div>
-                
-                <!-- Direct Download Tab -->
-                <div id="hero-direct-tab" class="hero-tab-content">
-                    <a href="https://github.com/begoo-ai/app/releases/latest/download/Begoo.zip" class="btn-primary hero-download-btn">
-                        <span>📦</span>
-                        Download Begoo.zip (Apple Silicon)
-                    </a>
-                    <p class="hero-download-note">For Intel Macs, use Homebrew above</p>
-                </div>
+                <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" class="btn-primary hero-download-btn" style="display: inline-flex; align-items: center; gap: 12px; padding: 16px 32px; font-size: 18px;">
+                    <span style="font-size: 24px;">🍎</span>
+                    Download on the App Store
+                </a>
+                <p class="hero-download-note">Free with 20 daily transcriptions • Pro for unlimited</p>
             </div>
-            <div class="badge">macOS 14.0+ • Universal Support</div>
+            <div class="badge">macOS 14.0+ • Available on App Store</div>
         </div>
     </section>
 
@@ -78,13 +61,46 @@
         </div>
     </section>
 
-    <!-- Pricing/Free Section -->
+    <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="pricing-container">
-            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 12px; color: #1a1a2e;">It's free</h2>
-                <p style="color: rgba(26, 26, 46, 0.7); font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
-                    Use it however you want. For commercial use with teams larger than 10 people, just reach out and we'll sort something out.
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 12px; color: #1a1a2e;">Simple, Fair Pricing</h2>
+                <p style="color: rgba(26, 26, 46, 0.7); font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+                    Start free, upgrade when you need more
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+                    <!-- Free Tier -->
+                    <div style="background: white; border: 2px solid #e5e7eb; border-radius: 16px; padding: 32px; text-align: left;">
+                        <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 8px; color: #1a1a2e;">Free</h3>
+                        <p style="font-size: 32px; font-weight: 700; color: #1a1a2e; margin-bottom: 16px;">$0</p>
+                        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0;">
+                            <li style="padding: 8px 0; color: rgba(26, 26, 46, 0.7);">✓ 20 transcriptions per day</li>
+                            <li style="padding: 8px 0; color: rgba(26, 26, 46, 0.7);">✓ All transcription engines</li>
+                            <li style="padding: 8px 0; color: rgba(26, 26, 46, 0.7);">✓ Fully private & local</li>
+                            <li style="padding: 8px 0; color: rgba(26, 26, 46, 0.7);">✓ Perfect for personal use</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Pro Tier -->
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: 2px solid #667eea; border-radius: 16px; padding: 32px; text-align: left; position: relative;">
+                        <div style="position: absolute; top: 16px; right: 16px; background: #fbbf24; color: #1a1a2e; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">BEST VALUE</div>
+                        <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 8px; color: white;">Pro</h3>
+                        <p style="font-size: 32px; font-weight: 700; color: white; margin-bottom: 4px;">$9.99<span style="font-size: 16px; font-weight: 400;">/year</span></p>
+                        <p style="font-size: 14px; color: rgba(255, 255, 255, 0.8); margin-bottom: 16px;">or $1.99/month</p>
+                        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0;">
+                            <li style="padding: 8px 0; color: white;">✓ Unlimited transcriptions</li>
+                            <li style="padding: 8px 0; color: white;">✓ No daily limits</li>
+                            <li style="padding: 8px 0; color: white;">✓ Family Sharing included</li>
+                            <li style="padding: 8px 0; color: white;">✓ 14-day free trial</li>
+                        </ul>
+                        <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" style="display: block; background: white; color: #667eea; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 600;">Start Free Trial</a>
+                    </div>
+                </div>
+                
+                <p style="color: rgba(26, 26, 46, 0.6); font-size: 14px; line-height: 1.6;">
+                    Free for personal use. For commercial use with teams larger than 10 people, please <a href="mailto:hello@begoo.ai" style="color: #667eea; text-decoration: none;">contact us</a> for enterprise licensing.
                 </p>
             </div>
         </div>
@@ -93,41 +109,5 @@
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
     
-    <script>
-        // Hero download tabs functionality
-        function showHeroTab(tabName) {
-            // Hide all hero tab contents
-            const heroTabContents = document.querySelectorAll('.hero-tab-content');
-            heroTabContents.forEach(tab => tab.classList.remove('active'));
-            
-            // Remove active class from all hero tab buttons
-            const heroTabButtons = document.querySelectorAll('.hero-tab-button');
-            heroTabButtons.forEach(button => button.classList.remove('active'));
-            
-            // Show selected hero tab
-            document.getElementById('hero-' + tabName + '-tab').classList.add('active');
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-        }
-        
-        // Copy to clipboard functionality
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(function() {
-                // Show feedback
-                const button = event.target;
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
-                button.style.background = '#10b981';
-                
-                setTimeout(() => {
-                    button.textContent = originalText;
-                    button.style.background = '';
-                }, 2000);
-            }).catch(function(err) {
-                console.error('Failed to copy: ', err);
-            });
-        }
-    </script>
 </body>
 </html>
