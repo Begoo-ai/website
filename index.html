@@ -79,7 +79,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <img src="voiceflow-icon.svg" alt="Begoo voice-to-text app icon" class="hero-icon" id="heroIcon" style="width: 220px; height: 220px; margin: 0 auto 0px; display: block;">
+            <img src="voiceflow-icon.svg" alt="Begoo voice-to-text app icon" class="hero-icon" id="heroIcon" style="width: 220px; height: 220px; margin: 0 auto 32px; display: block;">
             <h1>Stop Typing. Start Talking.</h1>
             <p class="subtitle">AI voice-to-text that lives in your Mac menu bar. Private, powerful, and actually works.</p>
             <!-- App Store Download -->
@@ -95,20 +95,20 @@
     </section>
 
     <!-- Key Benefits Section -->
-    <section class="trust-indicators" style="text-align: center; padding: 60px 20px; background: #f9fafb;">
-        <p style="color: #6b7280; font-size: 14px; margin-bottom: 24px; letter-spacing: 1px; font-weight: 500;">BUILT FOR PRIVACY & PERFORMANCE</p>
-        <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; align-items: center; max-width: 900px; margin: 0 auto;">
-            <div>
-                <div style="font-size: 40px; font-weight: 700; color: #4F46E5;">100%</div>
-                <div style="font-size: 14px; color: #6B7280; margin-top: 8px;">Private & Local</div>
+    <section class="trust-indicators">
+        <p class="trust-indicators-label">BUILT FOR PRIVACY & PERFORMANCE</p>
+        <div class="trust-indicators-grid">
+            <div class="trust-stat">
+                <div class="trust-stat-value">100%</div>
+                <div class="trust-stat-label">Private & Local</div>
             </div>
-            <div>
-                <div style="font-size: 40px; font-weight: 700; color: #4F46E5;">0ms</div>
-                <div style="font-size: 14px; color: #6B7280; margin-top: 8px;">Network Latency</div>
+            <div class="trust-stat">
+                <div class="trust-stat-value">0ms</div>
+                <div class="trust-stat-label">Network Latency</div>
             </div>
-            <div>
-                <div style="font-size: 40px; font-weight: 700; color: #4F46E5;">∞</div>
-                <div style="font-size: 14px; color: #6B7280; margin-top: 8px;">Offline Usage</div>
+            <div class="trust-stat">
+                <div class="trust-stat-value">∞</div>
+                <div class="trust-stat-label">Offline Usage</div>
             </div>
         </div>
     </section>
@@ -145,26 +145,22 @@
     <section id="pricing" class="pricing">
         <div class="pricing-container">
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 12px; color: #111827;">Start Free</h2>
-                <p style="color: #4B5563; font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
+                <h2 style="font-size: 32px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Start Free</h2>
+                <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; margin-bottom: 32px;">
                     Unlimited transcriptions. No daily limits.
                 </p>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
-                    <!-- Free Unlimited -->
-                    <div style="background: #4F46E5; border: 2px solid #4F46E5; border-radius: 16px; padding: 32px; text-align: center; position: relative; max-width: 400px; margin: 0 auto;">
-                        <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 8px; color: white;">Begoo</h3>
-                        <p style="font-size: 40px; font-weight: 700; color: white; margin-bottom: 16px;">Free</p>
-                        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.9); margin-bottom: 24px;">Get started today.</p>
-                        <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; text-align: left;">
-                            <li style="padding: 8px 0; color: white;"><span style="color: #10B981;">✓</span> Unlimited transcriptions</li>
-                            <li style="padding: 8px 0; color: white;"><span style="color: #10B981;">✓</span> No daily limits ever</li>
-                            <li style="padding: 8px 0; color: white;"><span style="color: #10B981;">✓</span> All transcription engines</li>
-                            <li style="padding: 8px 0; color: white;"><span style="color: #10B981;">✓</span> 100% private & local</li>
-                            <li style="padding: 8px 0; color: white;"><span style="color: #10B981;">✓</span> Works offline</li>
-                        </ul>
-                        <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" style="display: block; background: white; color: #4F46E5; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px;">Download Free</a>
-                    </div>
+                <div class="pricing-free-card">
+                    <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">Begoo</h3>
+                    <p style="font-size: 16px; opacity: 0.9; margin-bottom: 24px;">100% free. Get started today.</p>
+                    <ul>
+                        <li><span class="checkmark">✓</span> Unlimited transcriptions</li>
+                        <li><span class="checkmark">✓</span> No daily limits ever</li>
+                        <li><span class="checkmark">✓</span> All transcription engines</li>
+                        <li><span class="checkmark">✓</span> 100% private & local</li>
+                        <li><span class="checkmark">✓</span> Works offline</li>
+                    </ul>
+                    <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" class="download-btn">Download Now</a>
                 </div>
                 
             </div>
@@ -172,106 +168,106 @@
     </section>
 
     <!-- For Business Section -->
-    <section style="max-width: 900px; margin: 80px auto; padding: 0 20px;">
-        <div style="background: white; border: 2px solid #E5E7EB; border-radius: 16px; padding: 40px; text-align: center;">
-            <div style="display: inline-block; background: #4F46E5; padding: 8px 16px; border-radius: 20px; margin-bottom: 16px;">
-                <span style="color: white; font-size: 14px; font-weight: 600;">FOR BUSINESSES</span>
+    <section class="business-section">
+        <div class="business-card">
+            <div class="business-badge">
+                <span>FOR BUSINESSES</span>
             </div>
-            <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 16px; color: #111827;">Using Begoo at Your Company?</h2>
-            <p style="color: #4B5563; font-size: 16px; line-height: 1.6; margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Begoo is free for individuals and small teams. If you're part of a business with <strong style="color: #111827;">10 or more employees</strong>, we ask that you obtain a commercial license to support continued development.
+            <h2 style="font-size: 28px; font-weight: 600; margin-bottom: 16px; color: var(--text-primary);">Using Begoo at Your Company?</h2>
+            <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Begoo is free for individuals and small teams. If you're part of a business with <strong>10 or more employees</strong>, we ask that you obtain a commercial license to support continued development.
             </p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; text-align: left;">
-                <div style="padding: 16px; background: #F9FAFB; border-radius: 8px; border: 1px solid #E5E7EB;">
-                    <div style="font-weight: 600; color: #111827; margin-bottom: 4px;"><span style="color: #10B981;">✓</span> Free Tier</div>
-                    <div style="font-size: 14px; color: #6B7280;">Individuals & teams under 10</div>
+            <div class="business-grid">
+                <div class="business-tier">
+                    <div class="business-tier-title"><span style="color: #10B981;">✓</span> Free Tier</div>
+                    <div class="business-tier-desc">Individuals & teams under 10</div>
                 </div>
-                <div style="padding: 16px; background: #F9FAFB; border-radius: 8px; border: 1px solid #E5E7EB;">
-                    <div style="font-weight: 600; color: #111827; margin-bottom: 4px;">💼 Commercial License</div>
-                    <div style="font-size: 14px; color: #6B7280;">Businesses with 10+ employees</div>
+                <div class="business-tier">
+                    <div class="business-tier-title">💼 Commercial License</div>
+                    <div class="business-tier-desc">Businesses with 10+ employees</div>
                 </div>
             </div>
             
-            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="mailto:sales@getbegoo.com" style="display: inline-flex; align-items: center; gap: 8px; background: #4F46E5; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; transition: background 0.2s;">
+            <div class="business-actions">
+                <a href="mailto:sales@getbegoo.com" class="btn-business-primary">
                     <span>Contact Sales</span>
                     <span style="font-size: 18px;">→</span>
                 </a>
-                <a href="terms.html" style="display: inline-flex; align-items: center; gap: 8px; background: white; color: #4F46E5; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; border: 2px solid #4F46E5;">
+                <a href="terms.html" class="btn-business-secondary">
                     View Terms
                 </a>
             </div>
             
-            <p style="color: #9ca3af; font-size: 13px; margin-top: 24px; font-style: italic;">
+            <p class="business-note">
                 We operate on an honor system and trust businesses to comply with these terms.
             </p>
         </div>
     </section>
 
     <!-- Why Free Section -->
-    <section style="max-width: 900px; margin: 80px auto; padding: 40px 20px; background: #F9FAFB; border-radius: 16px;">
-        <h2 style="text-align: center; font-size: 32px; font-weight: 600; margin-bottom: 16px; color: #111827;">Why Is Begoo Free?</h2>
-        <p style="text-align: center; color: #4B5563; font-size: 16px; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">We believe voice transcription should be accessible to everyone, not locked behind paywalls.</p>
+    <section class="why-free-section">
+        <h2>Why Is Begoo Free?</h2>
+        <p>We believe voice transcription should be accessible to everyone, not locked behind paywalls.</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 32px;">
-            <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB;">
-                <div style="font-size: 32px; margin-bottom: 12px;">🎯</div>
-                <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #111827;">Our Mission</h3>
-                <p style="color: #6B7280; font-size: 14px; line-height: 1.6;">Make transcription accessible to everyone—students, writers, developers, and professionals—without usage limits or subscription barriers.</p>
+        <div class="why-free-grid">
+            <div class="why-free-card">
+                <div class="icon">🎯</div>
+                <h3>Our Mission</h3>
+                <p>Make transcription accessible to everyone—students, writers, developers, and professionals—without usage limits or subscription barriers.</p>
             </div>
             
-            <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB;">
-                <div style="font-size: 32px; margin-bottom: 12px;">💡</div>
-                <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #111827;">Sustainable Model</h3>
-                <p style="color: #6B7280; font-size: 14px; line-height: 1.6;">Core transcription stays free. We're building a sustainable business through commercial licensing and potential premium features.</p>
+            <div class="why-free-card">
+                <div class="icon">💡</div>
+                <h3>Sustainable Model</h3>
+                <p>Core transcription stays free. We're building a sustainable business through commercial licensing and potential premium features.</p>
             </div>
             
-            <div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #E5E7EB;">
-                <div style="font-size: 32px; margin-bottom: 12px;">🤝</div>
-                <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #111827;">Honor System</h3>
-                <p style="color: #6B7280; font-size: 14px; line-height: 1.6;">Free for individuals and small teams. Businesses with 10+ employees support development through commercial licensing.</p>
+            <div class="why-free-card">
+                <div class="icon">🤝</div>
+                <h3>Honor System</h3>
+                <p>Free for individuals and small teams. Businesses with 10+ employees support development through commercial licensing.</p>
             </div>
         </div>
         
-        <p style="text-align: center; color: #6B7280; font-size: 14px; font-style: italic;">No ads. No data collection. No hidden costs. Just a tool that works.</p>
+        <p class="why-free-footer">No ads. No data collection. No hidden costs. Just a tool that works.</p>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" style="max-width: 800px; margin: 80px auto; padding: 0 20px;">
-        <h2 style="text-align: center; font-size: 32px; font-weight: 600; margin-bottom: 40px; color: #111827;">Frequently Asked Questions</h2>
+    <section id="faq" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
         
-        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer;">
-            <summary style="font-weight: 600; font-size: 16px; color: #111827;">Is Begoo free?</summary>
-            <p style="margin-top: 12px; color: #4B5563; line-height: 1.6;">Yes! Begoo is free with unlimited transcriptions and no daily limits.</p>
+        <details>
+            <summary>Is Begoo free?</summary>
+            <p>Yes! Begoo is free with unlimited transcriptions and no daily limits.</p>
         </details>
         
-        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer;">
-            <summary style="font-weight: 600; font-size: 16px; color: #111827;">Is my data private?</summary>
-            <p style="margin-top: 12px; color: #4B5563; line-height: 1.6;">100% private. All transcription happens locally on your Mac. Nothing is uploaded to the cloud.</p>
+        <details>
+            <summary>Is my data private?</summary>
+            <p>100% private. All transcription happens locally on your Mac. Nothing is uploaded to the cloud.</p>
         </details>
         
-        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer;">
-            <summary style="font-weight: 600; font-size: 16px; color: #111827;">Can I use Begoo for commercial purposes?</summary>
-            <p style="margin-top: 12px; color: #4B5563; line-height: 1.6;">Free for individuals and small teams. For businesses with 10+ employees, please contact us at <a href="mailto:sales@getbegoo.com" style="color: #0EA5E9; text-decoration: none;">sales@getbegoo.com</a> for commercial licensing.</p>
+        <details>
+            <summary>Can I use Begoo for commercial purposes?</summary>
+            <p>Free for individuals and small teams. For businesses with 10+ employees, please contact us at <a href="mailto:sales@getbegoo.com">sales@getbegoo.com</a> for commercial licensing.</p>
         </details>
         
-        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer;">
-            <summary style="font-weight: 600; font-size: 16px; color: #111827;">How do you make money?</summary>
-            <p style="margin-top: 12px; color: #4B5563; line-height: 1.6;">We operate on an honor system with commercial licensing for businesses with 10+ employees. This sustainable model allows us to keep core transcription free for everyone.</p>
+        <details>
+            <summary>How do you make money?</summary>
+            <p>We operate on an honor system with commercial licensing for businesses with 10+ employees. This sustainable model allows us to keep core transcription free for everyone.</p>
         </details>
         
-        <details style="margin-bottom: 16px; padding: 20px; background: white; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer;">
-            <summary style="font-weight: 600; font-size: 16px; color: #111827;">Do I need an internet connection?</summary>
-            <p style="margin-top: 12px; color: #4B5563; line-height: 1.6;">No! Begoo works completely offline. All transcription happens locally on your device.</p>
+        <details>
+            <summary>Do I need an internet connection?</summary>
+            <p>No! Begoo works completely offline. All transcription happens locally on your device.</p>
         </details>
     </section>
 
     <!-- Final CTA Section -->
-    <section style="background: #4F46E5; padding: 60px 20px; text-align: center; color: white; margin-top: 80px;">
-        <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">Ready to stop typing?</h2>
-        <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Download for free today. Unlimited transcriptions included.</p>
-        <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" style="display: inline-flex; align-items: center; gap: 12px; background: white; color: #4F46E5; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 18px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <section class="final-cta">
+        <h2>Ready to stop typing?</h2>
+        <p>Download for free today. Unlimited transcriptions included.</p>
+        <a href="https://apps.apple.com/app/begoo/idXXXXXXXXXX" class="cta-button">
             <span style="font-size: 24px;">🍎</span>
             Download Now
         </a>
