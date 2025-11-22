@@ -324,6 +324,20 @@ nav {
     fill: none;
 }
 
+/* Unleash Apple Silicon Power - CPU (Orange - performance, energy) */
+.feature-card:nth-child(4) .feature-icon path[opacity],
+.feature-card:nth-child(4) .feature-icon rect[opacity] {
+    fill: #F97316;
+    opacity: 0.2 !important;
+}
+
+.feature-card:nth-child(4) .feature-icon path:not([opacity]),
+.feature-card:nth-child(4) .feature-icon rect:not([opacity]),
+.feature-card:nth-child(4) .feature-icon line {
+    stroke: #F97316;
+    fill: none;
+}
+
 .feature-card h3 {
     font-family: 'Sora', sans-serif;
     font-size: 18px;
