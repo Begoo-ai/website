@@ -131,7 +131,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding: 80px 40px var(--space-xl);
+    padding: 64px 40px var(--space-lg);
     text-align: center;
     position: relative;
 }
@@ -157,7 +157,7 @@ nav {
 .hero .subtitle {
     font-size: 18px;
     color: var(--text-secondary);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     line-height: 1.6;
     font-weight: 400;
 }
@@ -217,20 +217,20 @@ nav {
     font-size: 12px;
     font-weight: 400;
     color: var(--text-tertiary);
-    margin-top: var(--space-md);
+    margin-top: var(--space-sm);
     border: 1px solid var(--border-medium);
 }
 
 /* Features Section */
 .features {
-    padding: var(--space-xl) 40px var(--space-2xl);
+    padding: var(--space-lg) 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-sm);
 }
 
 .section-header h2 {
@@ -270,7 +270,7 @@ nav {
 
 .feature-icon {
     font-size: 32px;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     display: block;
     opacity: 1;
 }
@@ -292,9 +292,10 @@ nav {
 
 /* Pricing Section */
 .pricing {
-    padding: var(--space-2xl) 40px;
+    padding: var(--space-lg) 40px;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-light);
+    margin-top: var(--space-sm);
 }
 
 .pricing-container {
@@ -559,14 +560,14 @@ a:hover {
 /* Trust Indicators Section */
 .trust-indicators {
     text-align: center;
-    padding: var(--space-xl) 20px;
+    padding: var(--space-lg) 20px;
     background: var(--bg-secondary);
 }
 
 .trust-indicators-label {
     color: var(--text-tertiary);
     font-size: 14px;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -586,7 +587,7 @@ a:hover {
 }
 
 .trust-stat-value {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--primary);
 }
@@ -594,7 +595,7 @@ a:hover {
 .trust-stat-label {
     font-size: 14px;
     color: var(--text-tertiary);
-    margin-top: var(--space-xs);
+    margin-top: 4px;
 }
 
 /* Pricing Free Tier */
@@ -602,10 +603,10 @@ a:hover {
     background: var(--primary);
     border: 2px solid var(--primary);
     border-radius: var(--radius-lg);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     text-align: center;
     max-width: 400px;
-    margin: 0 auto var(--space-lg);
+    margin: 0 auto;
 }
 
 .pricing-free-card h3,
@@ -617,13 +618,13 @@ a:hover {
 .pricing-free-card .price {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
 }
 
 .pricing-free-card ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 var(--space-md) 0;
+    margin: 0 0 var(--space-sm) 0;
     text-align: left;
 }
 
@@ -657,7 +658,7 @@ a:hover {
 /* Business Section */
 .business-section {
     max-width: 900px;
-    margin: var(--space-2xl) auto;
+    margin: var(--space-md) auto;
     padding: 0 20px;
 }
 
@@ -665,7 +666,7 @@ a:hover {
     background: white;
     border: 2px solid var(--border-medium);
     border-radius: var(--radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     text-align: center;
 }
 
@@ -674,7 +675,7 @@ a:hover {
     background: var(--primary);
     padding: var(--space-xs) var(--space-sm);
     border-radius: 20px;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
 }
 
 .business-badge span {
@@ -687,7 +688,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-sm);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -704,7 +705,7 @@ a:hover {
 .business-tier-title {
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .business-tier-desc {
@@ -717,6 +718,7 @@ a:hover {
     gap: var(--space-sm);
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: var(--space-sm);
 }
 
 .btn-business-primary {
@@ -762,15 +764,15 @@ a:hover {
 .business-note {
     color: #9ca3af;
     font-size: 13px;
-    margin-top: var(--space-md);
+    margin-top: var(--space-sm);
     font-style: italic;
 }
 
 /* Why Free Section */
 .why-free-section {
     max-width: 900px;
-    margin: var(--space-2xl) auto;
-    padding: var(--space-lg) 20px;
+    margin: var(--space-md) auto;
+    padding: var(--space-md) 20px;
     background: var(--bg-secondary);
     border-radius: var(--radius-lg);
 }
@@ -779,7 +781,7 @@ a:hover {
     text-align: center;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
     color: var(--text-primary);
 }
 
@@ -787,7 +789,7 @@ a:hover {
     text-align: center;
     color: var(--text-secondary);
     font-size: 16px;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -809,7 +811,7 @@ a:hover {
 
 .why-free-card .icon {
     font-size: 32px;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
 }
 
 .why-free-card h3 {
@@ -835,7 +837,7 @@ a:hover {
 /* FAQ Section */
 .faq-section {
     max-width: 800px;
-    margin: var(--space-2xl) auto;
+    margin: var(--space-md) auto;
     padding: 0 20px;
 }
 
@@ -843,7 +845,7 @@ a:hover {
     text-align: center;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     color: var(--text-primary);
 }
 
@@ -877,16 +879,16 @@ details p {
 /* Final CTA Section */
 .final-cta {
     background: var(--primary);
-    padding: var(--space-xl) 20px;
+    padding: var(--space-lg) 20px;
     text-align: center;
     color: white;
-    margin-top: var(--space-2xl);
+    margin-top: var(--space-md);
 }
 
 .final-cta h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
     color: white;
     background: none;
     -webkit-text-fill-color: white;
@@ -894,7 +896,7 @@ details p {
 
 .final-cta p {
     font-size: 18px;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     opacity: 0.9;
     color: white;
 }
