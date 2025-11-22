@@ -189,6 +189,19 @@ nav {
     box-shadow: var(--shadow-md);
 }
 
+.btn-primary .btn-icon {
+    color: var(--primary);
+}
+
+.btn-primary .btn-icon [opacity] {
+    fill: var(--primary);
+    opacity: 0.2;
+}
+
+.btn-primary .btn-icon [stroke] {
+    stroke: var(--primary);
+}
+
 .btn-secondary {
     display: inline-block;
     padding: 12px 28px;
@@ -751,6 +764,22 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+.btn-business-primary .btn-icon,
+.cta-button .btn-icon {
+    color: white;
+}
+
+.btn-business-primary .btn-icon [opacity],
+.cta-button .btn-icon [opacity] {
+    fill: white;
+    opacity: 0.3;
+}
+
+.btn-business-primary .btn-icon [stroke],
+.cta-button .btn-icon [stroke] {
+    stroke: white;
+}
+
 .btn-business-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
@@ -951,6 +980,19 @@ details p {
 .final-cta .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+.final-cta .cta-button .btn-icon {
+    color: var(--primary);
+}
+
+.final-cta .cta-button .btn-icon [opacity] {
+    fill: var(--primary);
+    opacity: 0.2;
+}
+
+.final-cta .cta-button .btn-icon [stroke] {
+    stroke: var(--primary);
 }
 
 /* Responsive */
