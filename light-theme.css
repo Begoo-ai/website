@@ -189,20 +189,14 @@ nav {
     box-shadow: var(--shadow-md);
 }
 
-.btn-primary .btn-icon path[opacity],
-.btn-primary .btn-icon polygon[opacity],
-.btn-primary .btn-icon circle[opacity] {
-    fill: var(--primary);
+/* Apple Logo in buttons (Slate - Apple brand feel) */
+.btn-primary .btn-icon path[opacity] {
+    fill: #64748B;
     opacity: 0.2 !important;
 }
 
-.btn-primary .btn-icon path:not([opacity]),
-.btn-primary .btn-icon polygon:not([opacity]),
-.btn-primary .btn-icon circle:not([opacity]),
-.btn-primary .btn-icon line,
-.btn-primary .btn-icon polyline,
-.btn-primary .btn-icon rect {
-    stroke: var(--primary);
+.btn-primary .btn-icon path:not([opacity]) {
+    stroke: #64748B;
     fill: none;
 }
 
@@ -292,20 +286,41 @@ nav {
     display: block;
 }
 
-.feature-icon path[opacity],
-.feature-icon polygon[opacity],
-.feature-icon circle[opacity] {
-    fill: var(--primary);
+/* Just Speak - Lightning (Yellow/Gold - energy, speed) */
+.feature-card:nth-child(1) .feature-icon path[opacity],
+.feature-card:nth-child(1) .feature-icon polygon[opacity] {
+    fill: #F59E0B;
     opacity: 0.2 !important;
 }
 
-.feature-icon path:not([opacity]),
-.feature-icon polygon:not([opacity]),
-.feature-icon circle:not([opacity]),
-.feature-icon line,
-.feature-icon polyline,
-.feature-icon rect {
-    stroke: var(--primary);
+.feature-card:nth-child(1) .feature-icon path:not([opacity]),
+.feature-card:nth-child(1) .feature-icon polygon:not([opacity]) {
+    stroke: #F59E0B;
+    fill: none;
+}
+
+/* Stays Private - Shield (Green - security, trust) */
+.feature-card:nth-child(2) .feature-icon path[opacity],
+.feature-card:nth-child(2) .feature-icon circle[opacity] {
+    fill: #10B981;
+    opacity: 0.2 !important;
+}
+
+.feature-card:nth-child(2) .feature-icon path:not([opacity]),
+.feature-card:nth-child(2) .feature-icon polyline {
+    stroke: #10B981;
+    fill: none;
+}
+
+/* Works Anywhere - Cursor (Purple - versatility, magic) */
+.feature-card:nth-child(3) .feature-icon path[opacity] {
+    fill: #8B5CF6;
+    opacity: 0.2 !important;
+}
+
+.feature-card:nth-child(3) .feature-icon path:not([opacity]),
+.feature-card:nth-child(3) .feature-icon line {
+    stroke: #8B5CF6;
     fill: none;
 }
 
@@ -895,20 +910,37 @@ a:hover {
     display: block;
 }
 
-.why-free-card .icon path[opacity],
-.why-free-card .icon polygon[opacity],
-.why-free-card .icon circle[opacity] {
-    fill: var(--primary);
+/* Our Mission - Heart (Red/Pink - passion, care) */
+.why-free-card:nth-child(1) .icon path[opacity] {
+    fill: #EF4444;
     opacity: 0.2 !important;
 }
 
-.why-free-card .icon path:not([opacity]),
-.why-free-card .icon polygon:not([opacity]),
-.why-free-card .icon circle:not([opacity]),
-.why-free-card .icon line,
-.why-free-card .icon polyline,
-.why-free-card .icon rect {
-    stroke: var(--primary);
+.why-free-card:nth-child(1) .icon path:not([opacity]) {
+    stroke: #EF4444;
+    fill: none;
+}
+
+/* Sustainable Model - Infinity (Teal - growth, sustainability) */
+.why-free-card:nth-child(2) .icon path[opacity] {
+    fill: #14B8A6;
+    opacity: 0.2 !important;
+}
+
+.why-free-card:nth-child(2) .icon path:not([opacity]) {
+    stroke: #14B8A6;
+    fill: none;
+}
+
+/* Honor System - Handshake (Blue - trust, partnership) */
+.why-free-card:nth-child(3) .icon path[opacity] {
+    fill: #3B82F6;
+    opacity: 0.2 !important;
+}
+
+.why-free-card:nth-child(3) .icon path:not([opacity]),
+.why-free-card:nth-child(3) .icon polyline {
+    stroke: #3B82F6;
     fill: none;
 }
 
@@ -1018,20 +1050,14 @@ details p {
     box-shadow: var(--shadow-lg);
 }
 
-.final-cta .cta-button .btn-icon path[opacity],
-.final-cta .cta-button .btn-icon polygon[opacity],
-.final-cta .cta-button .btn-icon circle[opacity] {
-    fill: var(--primary);
+/* Apple Logo in CTA (Slate - Apple brand feel) */
+.final-cta .cta-button .btn-icon path[opacity] {
+    fill: #64748B;
     opacity: 0.2 !important;
 }
 
-.final-cta .cta-button .btn-icon path:not([opacity]),
-.final-cta .cta-button .btn-icon polygon:not([opacity]),
-.final-cta .cta-button .btn-icon circle:not([opacity]),
-.final-cta .cta-button .btn-icon line,
-.final-cta .cta-button .btn-icon polyline,
-.final-cta .cta-button .btn-icon rect {
-    stroke: var(--primary);
+.final-cta .cta-button .btn-icon path:not([opacity]) {
+    stroke: #64748B;
     fill: none;
 }
 
