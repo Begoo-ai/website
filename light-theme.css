@@ -189,17 +189,21 @@ nav {
     box-shadow: var(--shadow-md);
 }
 
-.btn-primary .btn-icon {
-    color: var(--primary);
-}
-
-.btn-primary .btn-icon [opacity] {
+.btn-primary .btn-icon path[opacity],
+.btn-primary .btn-icon polygon[opacity],
+.btn-primary .btn-icon circle[opacity] {
     fill: var(--primary);
-    opacity: 0.2;
+    opacity: 0.2 !important;
 }
 
-.btn-primary .btn-icon [stroke] {
+.btn-primary .btn-icon path:not([opacity]),
+.btn-primary .btn-icon polygon:not([opacity]),
+.btn-primary .btn-icon circle:not([opacity]),
+.btn-primary .btn-icon line,
+.btn-primary .btn-icon polyline,
+.btn-primary .btn-icon rect {
     stroke: var(--primary);
+    fill: none;
 }
 
 .btn-secondary {
@@ -284,24 +288,25 @@ nav {
 .feature-icon {
     width: 48px;
     height: 48px;
-    margin-bottom: var(--space-sm);
+    margin: 0 auto var(--space-sm);
     display: block;
-    color: var(--primary);
 }
 
-.feature-icon polygon[opacity],
 .feature-icon path[opacity],
+.feature-icon polygon[opacity],
 .feature-icon circle[opacity] {
     fill: var(--primary);
-    opacity: 0.2;
+    opacity: 0.2 !important;
 }
 
-.feature-icon polygon[stroke],
-.feature-icon path[stroke],
-.feature-icon circle[stroke],
+.feature-icon path:not([opacity]),
+.feature-icon polygon:not([opacity]),
+.feature-icon circle:not([opacity]),
 .feature-icon line,
-.feature-icon rect[stroke] {
+.feature-icon polyline,
+.feature-icon rect {
     stroke: var(--primary);
+    fill: none;
 }
 
 .feature-card h3 {
@@ -857,23 +862,25 @@ a:hover {
 .why-free-card .icon {
     width: 40px;
     height: 40px;
-    margin-bottom: var(--space-xs);
-    color: var(--primary);
+    margin: 0 auto var(--space-xs);
+    display: block;
 }
 
-.why-free-card .icon polygon[opacity],
 .why-free-card .icon path[opacity],
+.why-free-card .icon polygon[opacity],
 .why-free-card .icon circle[opacity] {
     fill: var(--primary);
-    opacity: 0.2;
+    opacity: 0.2 !important;
 }
 
-.why-free-card .icon polygon[stroke],
-.why-free-card .icon path[stroke],
-.why-free-card .icon circle[stroke],
+.why-free-card .icon path:not([opacity]),
+.why-free-card .icon polygon:not([opacity]),
+.why-free-card .icon circle:not([opacity]),
 .why-free-card .icon line,
-.why-free-card .icon rect[stroke] {
+.why-free-card .icon polyline,
+.why-free-card .icon rect {
     stroke: var(--primary);
+    fill: none;
 }
 
 .why-free-card h3 {
@@ -982,17 +989,21 @@ details p {
     box-shadow: var(--shadow-lg);
 }
 
-.final-cta .cta-button .btn-icon {
-    color: var(--primary);
-}
-
-.final-cta .cta-button .btn-icon [opacity] {
+.final-cta .cta-button .btn-icon path[opacity],
+.final-cta .cta-button .btn-icon polygon[opacity],
+.final-cta .cta-button .btn-icon circle[opacity] {
     fill: var(--primary);
-    opacity: 0.2;
+    opacity: 0.2 !important;
 }
 
-.final-cta .cta-button .btn-icon [stroke] {
+.final-cta .cta-button .btn-icon path:not([opacity]),
+.final-cta .cta-button .btn-icon polygon:not([opacity]),
+.final-cta .cta-button .btn-icon circle:not([opacity]),
+.final-cta .cta-button .btn-icon line,
+.final-cta .cta-button .btn-icon polyline,
+.final-cta .cta-button .btn-icon rect {
     stroke: var(--primary);
+    fill: none;
 }
 
 /* Responsive */
