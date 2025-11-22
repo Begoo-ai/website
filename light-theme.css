@@ -363,14 +363,14 @@ nav {
 
 /* Enterprise Features Section */
 .enterprise-section {
-    padding: var(--space-2xl) var(--space-md);
+    padding: var(--space-xl) var(--space-md);
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .enterprise-header {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto var(--space-xl);
+    margin: 0 auto var(--space-lg);
 }
 
 .enterprise-badge {
@@ -387,30 +387,30 @@ nav {
 
 .enterprise-header h2 {
     font-family: 'Sora', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
     color: var(--text-primary);
 }
 
 .enterprise-header p {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .enterprise-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
-    max-width: 1100px;
-    margin: 0 auto var(--space-xl);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-md);
+    max-width: 1000px;
+    margin: 0 auto var(--space-lg);
 }
 
 .enterprise-card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     border: 1px solid var(--border-medium);
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
@@ -423,14 +423,14 @@ nav {
 }
 
 .enterprise-icon-wrapper {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     transition: all 0.3s ease;
 }
 
@@ -440,25 +440,25 @@ nav {
 }
 
 .enterprise-icon {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     color: var(--primary);
 }
 
 .enterprise-card h3 {
     font-family: 'Sora', sans-serif;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
     color: var(--text-primary);
     line-height: 1.3;
 }
 
 .enterprise-card p {
     color: var(--text-secondary);
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: var(--space-md);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .feature-list {
@@ -492,24 +492,24 @@ nav {
 .enterprise-cta-card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     border: 1px solid var(--border-medium);
     box-shadow: var(--shadow-sm);
 }
 
 .enterprise-cta-card h3 {
     font-family: 'Sora', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
     color: var(--text-primary);
 }
 
 .enterprise-cta-card p {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: var(--space-lg);
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
 }
 
 .enterprise-cta-button {
