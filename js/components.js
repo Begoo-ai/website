@@ -56,10 +56,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Advanced email obfuscation system
-function createObfuscatedEmail() {
+function createObfuscatedEmail(type = 'hello') {
     // Multi-layer obfuscation that's very hard for bots to parse
+    let userPart;
+    
+    if (type === 'sales') {
+        userPart = String.fromCharCode(115, 97, 108, 101, 115); // 'sales' in char codes
+    } else {
+        userPart = String.fromCharCode(104, 101, 108, 108, 111); // 'hello' in char codes
+    }
+    
     const parts = [
-        String.fromCharCode(104, 101, 108, 108, 111), // 'hello' in char codes
+        userPart,
         String.fromCharCode(64), // '@' symbol
         ['get', 'be', 'goo'].join(''), // split domain
         String.fromCharCode(46), // '.' symbol  
@@ -116,14 +124,20 @@ function createEmailComponent(displayText = null) {
 }
 
 // Main function to reveal and open email
-function revealAndOpenEmail(event) {
+function revealAndOpenEmail(event, emailType = 'hello') {
     event.preventDefault();
     
     // Get the real email through obfuscation
-    const email = createObfuscatedEmail();
+    const email = createObfuscatedEmail(emailType);
     
     // For header Contact link - just open email client directly
     if (event.target.classList.contains('contact-link')) {
+        window.location.href = 'mailto:' + email;
+        return false;
+    }
+    
+    // For sales link - just open email client directly
+    if (event.target.classList.contains('sales-link') || event.target.closest('.sales-link')) {
         window.location.href = 'mailto:' + email;
         return false;
     }
@@ -161,11 +175,19 @@ function replaceEmailPlaceholders() {
         placeholder.replaceWith(emailComponent);
     });
     
-    // Also replace any remaining mailto links with obfuscated versions
-    const mailtoLinks = document.querySelectorAll('a[href*="hello@getbegoo.com"]');
-    mailtoLinks.forEach(link => {
+    // Replace hello@ mailto links with obfuscated versions
+    const helloLinks = document.querySelectorAll('a[href*="hello@getbegoo.com"]');
+    helloLinks.forEach(link => {
         link.href = '#';
-        link.onclick = revealAndOpenEmail;
+        link.onclick = (e) => revealAndOpenEmail(e, 'hello');
+    });
+    
+    // Replace sales@ mailto links with obfuscated versions
+    const salesLinks = document.querySelectorAll('a[href*="sales@getbegoo.com"]');
+    salesLinks.forEach(link => {
+        link.href = '#';
+        link.classList.add('sales-link');
+        link.onclick = (e) => revealAndOpenEmail(e, 'sales');
     });
 }
 
