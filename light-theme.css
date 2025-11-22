@@ -528,9 +528,10 @@ nav {
 }
 
 .enterprise-cta-button:hover {
-    background: var(--primary-dark);
+    background: #4080b8;
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(91, 159, 216, 0.4);
+    box-shadow: 0 6px 20px rgba(91, 159, 216, 0.5);
 }
 
 .enterprise-note {
