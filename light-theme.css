@@ -363,7 +363,7 @@ nav {
 
 /* Enterprise Features Section */
 .enterprise-section {
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-md) var(--space-md) var(--space-xl);
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
@@ -376,7 +376,7 @@ nav {
 .enterprise-badge {
     display: inline-block;
     padding: 6px 16px;
-    background: var(--primary-color);
+    background: var(--primary);
     color: white;
     border-radius: 20px;
     font-size: 12px;
