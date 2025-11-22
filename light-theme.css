@@ -361,6 +361,134 @@ nav {
     font-weight: 400;
 }
 
+/* Enterprise Features Section */
+.enterprise-section {
+    padding: var(--space-2xl) var(--space-md);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.enterprise-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-xl);
+}
+
+.enterprise-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-sm);
+}
+
+.enterprise-header h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.enterprise-header p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.enterprise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    max-width: 1100px;
+    margin: 0 auto var(--space-xl);
+}
+
+.enterprise-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    border: 1px solid var(--border-medium);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.enterprise-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.enterprise-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--space-md);
+    color: var(--primary-color);
+}
+
+.enterprise-card h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.enterprise-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    color: var(--text-tertiary);
+    font-size: 14px;
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.enterprise-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.enterprise-note {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.enterprise-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.enterprise-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 /* Pricing Section */
 .pricing {
     padding: var(--space-lg) 40px;
