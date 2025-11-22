@@ -269,10 +269,26 @@ nav {
 }
 
 .feature-icon {
-    font-size: 32px;
+    width: 48px;
+    height: 48px;
     margin-bottom: var(--space-sm);
     display: block;
-    opacity: 1;
+    color: var(--primary);
+}
+
+.feature-icon polygon[opacity],
+.feature-icon path[opacity],
+.feature-icon circle[opacity] {
+    fill: var(--primary);
+    opacity: 0.2;
+}
+
+.feature-icon polygon[stroke],
+.feature-icon path[stroke],
+.feature-icon circle[stroke],
+.feature-icon line,
+.feature-icon rect[stroke] {
+    stroke: var(--primary);
 }
 
 .feature-card h3 {
@@ -810,8 +826,25 @@ a:hover {
 }
 
 .why-free-card .icon {
-    font-size: 32px;
+    width: 40px;
+    height: 40px;
     margin-bottom: var(--space-xs);
+    color: var(--primary);
+}
+
+.why-free-card .icon polygon[opacity],
+.why-free-card .icon path[opacity],
+.why-free-card .icon circle[opacity] {
+    fill: var(--primary);
+    opacity: 0.2;
+}
+
+.why-free-card .icon polygon[stroke],
+.why-free-card .icon path[stroke],
+.why-free-card .icon circle[stroke],
+.why-free-card .icon line,
+.why-free-card .icon rect[stroke] {
+    stroke: var(--primary);
 }
 
 .why-free-card h3 {
