@@ -422,25 +422,42 @@ nav {
     transform: translateY(-4px);
 }
 
-.enterprise-icon {
-    width: 48px;
-    height: 48px;
+.enterprise-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-md);
+    transition: all 0.3s ease;
+}
+
+.enterprise-card:hover .enterprise-icon-wrapper {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+    transform: scale(1.05);
+}
+
+.enterprise-icon {
+    width: 36px;
+    height: 36px;
     color: var(--primary-color);
 }
 
 .enterprise-card h3 {
     font-family: 'Sora', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: var(--space-sm);
     color: var(--text-primary);
+    line-height: 1.3;
 }
 
 .enterprise-card p {
     color: var(--text-secondary);
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: var(--space-md);
 }
 
@@ -468,8 +485,52 @@ nav {
 
 .enterprise-cta {
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+}
+
+.enterprise-cta-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    border: 1px solid var(--border-medium);
+    box-shadow: var(--shadow-sm);
+}
+
+.enterprise-cta-card h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.enterprise-cta-card p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+}
+
+.enterprise-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.enterprise-cta-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
 }
 
 .enterprise-note {
