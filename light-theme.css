@@ -740,6 +740,35 @@ a:hover {
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.business-tier:first-child .tier-icon path[opacity],
+.business-tier:first-child .tier-icon circle[opacity] {
+    fill: #10B981;
+    opacity: 0.2 !important;
+}
+
+.business-tier:first-child .tier-icon path:not([opacity]),
+.business-tier:first-child .tier-icon circle:not([opacity]),
+.business-tier:first-child .tier-icon polyline {
+    stroke: #10B981;
+    fill: none;
+}
+
+.business-tier:last-child .tier-icon path[opacity],
+.business-tier:last-child .tier-icon circle[opacity] {
+    fill: var(--primary);
+    opacity: 0.2 !important;
+}
+
+.business-tier:last-child .tier-icon path:not([opacity]),
+.business-tier:last-child .tier-icon circle:not([opacity]),
+.business-tier:last-child .tier-icon line,
+.business-tier:last-child .tier-icon polyline {
+    stroke: var(--primary);
+    fill: none;
 }
 
 .business-tier-desc {
